@@ -201,7 +201,6 @@ jobs:
               data.plugins.push(newPlugin);
             }
 
-            data.updateTime = new Date().toISOString().replace(/\.\d{3}Z/, 'Z');
 
             fs.writeFileSync(process.env.INDEX_FILE_NAME, JSON.stringify(data, null, 2) + '\n');
             console.log('✅ plugins.v4.json 已更新');

@@ -140,6 +140,7 @@ jobs:
           fi
 
       - name: Sync fork with upstream
+        continue-on-error: true
         env:
           GH_TOKEN: ${{ secrets.INDEX_PAT }}
         run: |

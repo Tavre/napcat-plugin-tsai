@@ -116,4 +116,4 @@ jobs:
                 version: '${{ steps.version.outputs.version }}'
               }
             })
-            console.log('✅ 已触发 update-index.yml 工作流')
+            console.log('Triggered update-index.yml workflow')
